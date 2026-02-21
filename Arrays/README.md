@@ -31,5 +31,8 @@ index:     0      1     2       3
 value:   [10]   [20]   [30]   [40]
 address:   100   104    108    112
 ```
+نوضح بقي لي الوصول ب index سهل لو انت عارف base address بتاع اول عنصر اللي هو 100 مثلا عندنا وعارف ان كل عناصر جمب بعض ومثلا كل int حجمه 4byte يعني عنصر اللي جمبه هيبقي عنوانه 104 ____> index=1 ----> ال address=base address+index * 4=104
+نوصل لي *general equation* ال address=base_address+index*element_size 
 
 
+![]()
