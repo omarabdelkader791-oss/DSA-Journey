@@ -21,3 +21,15 @@ start by index=0 end by index= (arr.length-1)
 ## هنكلم علي اهم مميزه وهي access by index
 
 لي هي سهله ب access by index عشان متخزنه في ذاكره بشكل contiguous memory يعني عناصرها جمب بعض في ذاكره دون فواصل
+
+![](contiguousMemory.jpg)
+
+
+
+```
+index:     0      1     2       3
+value:   [10]   [20]   [30]   [40]
+address:   100   104    108    112
+```
+
+
