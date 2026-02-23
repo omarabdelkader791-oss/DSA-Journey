@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="template" content="Ignite 1.80" />
+
+	<!-- This site is optimized with the Yoast SEO plugin v19.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Deletion in Array - at Beginning, Given Location and End of Linear Array - CSVeda</title>
+	<link rel="canonical" href="https://csveda.com/data-structure/deletion-in-array-at-beginning-given-location-and-end-of-linear-array/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Deletion in Array - at Beginning, Given Location and End of Linear Array - CSVeda" />
+	<meta property="og:url" content="https://csveda.com/data-structure/deletion-in-array-at-beginning-given-location-and-end-of-linear-array/" />
+	<meta property="og:site_name" content="CSVeda" />
+	<meta property="og:image" content="https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-beginning.png" />
+	<meta name="author" content="admin" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="3 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://csveda.com/#website","url":"https://csveda.com/","name":"CSVeda","description":"computer science tutorials","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://csveda.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en"},{"@type":"ImageObject","inLanguage":"en","@id":"https://csveda.com/data-structure/deletion-in-array-at-beginning-given-location-and-end-of-linear-array/#primaryimage","url":"https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-beginning.png","contentUrl":"https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-beginning.png","width":810,"height":310,"caption":"deletion in array at beginning"},{"@type":"WebPage","@id":"https://csveda.com/data-structure/deletion-in-array-at-beginning-given-location-and-end-of-linear-array/#webpage","url":"https://csveda.com/data-structure/deletion-in-array-at-beginning-given-location-and-end-of-linear-array/","name":"Deletion in Array - at Beginning, Given Location and End of Linear Array - CSVeda","isPartOf":{"@id":"https://csveda.com/#website"},"primaryImageOfPage":{"@id":"https://csveda.com/data-structure/deletion-in-array-at-beginning-given-location-and-end-of-linear-array/#primaryimage"},"datePublished":"2019-05-23T15:51:12+00:00","dateModified":"2019-05-23T15:51:12+00:00","breadcrumb":{"@id":"https://csveda.com/data-structure/deletion-in-array-at-beginning-given-location-and-end-of-linear-array/#breadcrumb"},"inLanguage":"en","potentialAction":[{"@type":"ReadAction","target":["https://csveda.com/data-structure/deletion-in-array-at-beginning-given-location-and-end-of-linear-array/"]}]},{"@type":"BreadcrumbList","@id":"https://csveda.com/data-structure/deletion-in-array-at-beginning-given-location-and-end-of-linear-array/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://csveda.com/"},{"@type":"ListItem","position":2,"name":"Data Structure","item":"https://csveda.com/data-structure/"},{"@type":"ListItem","position":3,"name":"Deletion in Array &#8211; at Beginning, Given Location and End of Linear Array"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="CSVeda &raquo; Feed" href="https://csveda.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="CSVeda &raquo; Comments Feed" href="https://csveda.com/comments/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/csveda.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9.3"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<!-- csveda.com is managing ads with Advanced Ads --><script id="csved-ready">
+			window.advanced_ads_ready=function(e,a){a=a||"complete";var d=function(e){return"interactive"===a?"loading"!==e:"complete"===e};d(document.readyState)?e():document.addEventListener("readystatechange",(function(a){d(a.target.readyState)&&e()}),{once:"interactive"===a})},window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[];		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://csveda.com/wp-includes/css/dist/block-library/style.min.css?ver=5.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://csveda.com/wp-content/plugins/contact-widgets/assets/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 21px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--regular: 16px;--wp--preset--font-size--larger: 36px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='quiz-maker-css'  href='https://csveda.com/wp-content/plugins/quiz-maker/public/css/quiz-maker-public.css?ver=6.4.1.2' type='text/css' media='all' />
+<link rel='stylesheet' id='codemirror-blocks--css'  href='https://csveda.com/wp-content/plugins/wp-codemirror-block/assets/blocks/blocks.style.build.min.css?ver=1675403747' type='text/css' media='all' />
+<link rel='stylesheet' id='ct-ignite-google-fonts-css'  href='//fonts.googleapis.com/css?family=Lusitana%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;display=swap&#038;ver=5.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='ct-ignite-font-awesome-css'  href='https://csveda.com/wp-content/themes/ignite/assets/font-awesome/css/all.min.css?ver=5.9.3' type='text/css' media='all' />
+<link rel='stylesheet' id='ct-ignite-style-css'  href='https://csveda.com/wp-content/themes/ignite/style.css?ver=5.9.3' type='text/css' media='all' />
+<style id='ct-ignite-style-inline-css' type='text/css'>
+
+            .overflow-container {
+                background: ;
+            }
+            .main, .sidebar-primary-container, .breadcrumb-trail {
+                background: none;
+            }
+        
+</style>
+<script type='text/javascript' src='https://csveda.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://csveda.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://csveda.com/wp-json/" /><link rel="alternate" type="application/json" href="https://csveda.com/wp-json/wp/v2/pages/3508" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://csveda.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://csveda.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.9.3" />
+<link rel='shortlink' href='https://csveda.com/?p=3508' />
+<link rel="alternate" type="application/json+oembed" href="https://csveda.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcsveda.com%2Fdata-structure%2Fdeletion-in-array-at-beginning-given-location-and-end-of-linear-array%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://csveda.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcsveda.com%2Fdata-structure%2Fdeletion-in-array-at-beginning-given-location-and-end-of-linear-array%2F&#038;format=xml" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-51833907-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-51833907-2');
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9652193096232505",
+          enable_page_level_ads: true
+     });
+</script>
+
+<meta name="google-site-verification" content="9N8cLb6pQor31eXUSfyLS4Xd7Mcxs5qkfdgbk1eXgZg" /><style type="text/css">.saboxplugin-wrap{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;border:1px solid #eee;width:100%;clear:both;display:block;overflow:hidden;word-wrap:break-word;position:relative}.saboxplugin-wrap .saboxplugin-gravatar{float:left;padding:0 20px 20px 20px}.saboxplugin-wrap .saboxplugin-gravatar img{max-width:100px;height:auto;border-radius:0;}.saboxplugin-wrap .saboxplugin-authorname{font-size:18px;line-height:1;margin:20px 0 0 20px;display:block}.saboxplugin-wrap .saboxplugin-authorname a{text-decoration:none}.saboxplugin-wrap .saboxplugin-authorname a:focus{outline:0}.saboxplugin-wrap .saboxplugin-desc{display:block;margin:5px 20px}.saboxplugin-wrap .saboxplugin-desc a{text-decoration:underline}.saboxplugin-wrap .saboxplugin-desc p{margin:5px 0 12px}.saboxplugin-wrap .saboxplugin-web{margin:0 20px 15px;text-align:left}.saboxplugin-wrap .sab-web-position{text-align:right}.saboxplugin-wrap .saboxplugin-web a{color:#ccc;text-decoration:none}.saboxplugin-wrap .saboxplugin-socials{position:relative;display:block;background:#fcfcfc;padding:5px;border-top:1px solid #eee}.saboxplugin-wrap .saboxplugin-socials a svg{width:20px;height:20px}.saboxplugin-wrap .saboxplugin-socials a svg .st2{fill:#fff; transform-origin:center center;}.saboxplugin-wrap .saboxplugin-socials a svg .st1{fill:rgba(0,0,0,.3)}.saboxplugin-wrap .saboxplugin-socials a:hover{opacity:.8;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;box-shadow:none!important;-webkit-box-shadow:none!important}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color{box-shadow:none;padding:0;border:0;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;display:inline-block;color:#fff;font-size:0;text-decoration:inherit;margin:5px;-webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0;overflow:hidden}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-grey{text-decoration:inherit;box-shadow:none;position:relative;display:-moz-inline-stack;display:inline-block;vertical-align:middle;zoom:1;margin:10px 5px;color:#444;fill:#444}.clearfix:after,.clearfix:before{content:' ';display:table;line-height:0;clear:both}.ie7 .clearfix{zoom:1}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitch{border-color:#38245c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-addthis{border-color:#e91c00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-behance{border-color:#003eb0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-delicious{border-color:#06c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-deviantart{border-color:#036824}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-digg{border-color:#00327c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-dribbble{border-color:#ba1655}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-facebook{border-color:#1e2e4f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-flickr{border-color:#003576}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-github{border-color:#264874}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-google{border-color:#0b51c5}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-googleplus{border-color:#96271a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-html5{border-color:#902e13}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-instagram{border-color:#1630aa}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-linkedin{border-color:#00344f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-pinterest{border-color:#5b040e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-reddit{border-color:#992900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-rss{border-color:#a43b0a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-sharethis{border-color:#5d8420}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-skype{border-color:#00658a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-soundcloud{border-color:#995200}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-spotify{border-color:#0f612c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stackoverflow{border-color:#a95009}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-steam{border-color:#006388}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-user_email{border-color:#b84e05}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stumbleUpon{border-color:#9b280e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-tumblr{border-color:#10151b}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitter{border-color:#0967a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vimeo{border-color:#0d7091}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-windows{border-color:#003f71}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-whatsapp{border-color:#003f71}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-wordpress{border-color:#0f3647}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-yahoo{border-color:#14002d}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-youtube{border-color:#900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-xing{border-color:#000202}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mixcloud{border-color:#2475a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vk{border-color:#243549}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-medium{border-color:#00452c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-quora{border-color:#420e00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-meetup{border-color:#9b181c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-goodreads{border-color:#000}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-snapchat{border-color:#999700}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-500px{border-color:#00557f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mastodont{border-color:#185886}.sabox-plus-item{margin-bottom:20px}@media screen and (max-width:480px){.saboxplugin-wrap{text-align:center}.saboxplugin-wrap .saboxplugin-gravatar{float:none;padding:20px 0;text-align:center;margin:0 auto;display:block}.saboxplugin-wrap .saboxplugin-gravatar img{float:none;display:inline-block;display:-moz-inline-stack;vertical-align:middle;zoom:1}.saboxplugin-wrap .saboxplugin-desc{margin:0 10px 20px;text-align:center}.saboxplugin-wrap .saboxplugin-authorname{text-align:center;margin:10px 0 20px}}body .saboxplugin-authorname a,body .saboxplugin-authorname a:hover{box-shadow:none;-webkit-box-shadow:none}a.sab-profile-edit{font-size:16px!important;line-height:1!important}.sab-edit-settings a,a.sab-profile-edit{color:#0073aa!important;box-shadow:none!important;-webkit-box-shadow:none!important}.sab-edit-settings{margin-right:15px;position:absolute;right:0;z-index:2;bottom:10px;line-height:20px}.sab-edit-settings i{margin-left:5px}.saboxplugin-socials{line-height:1!important}.rtl .saboxplugin-wrap .saboxplugin-gravatar{float:right}.rtl .saboxplugin-wrap .saboxplugin-authorname{display:flex;align-items:center}.rtl .saboxplugin-wrap .saboxplugin-authorname .sab-profile-edit{margin-right:10px}.rtl .sab-edit-settings{right:auto;left:0}img.sab-custom-avatar{max-width:75px;}.saboxplugin-wrap {margin-top:0px; margin-bottom:0px; padding: 0px 0px }.saboxplugin-wrap .saboxplugin-authorname {font-size:18px; line-height:25px;}.saboxplugin-wrap .saboxplugin-desc p, .saboxplugin-wrap .saboxplugin-desc {font-size:14px !important; line-height:21px !important;}.saboxplugin-wrap .saboxplugin-web {font-size:14px;}.saboxplugin-wrap .saboxplugin-socials a svg {width:18px;height:18px;}</style><style>ins.adsbygoogle { background-color: transparent; padding: 0; }</style><link rel="icon" href="https://csveda.com/wp-content/uploads/2020/02/cropped-csvedaicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://csveda.com/wp-content/uploads/2020/02/cropped-csvedaicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://csveda.com/wp-content/uploads/2020/02/cropped-csvedaicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://csveda.com/wp-content/uploads/2020/02/cropped-csvedaicon-270x270.png" />
+</head>
+<body id="ignite" class="page-template page-template-page-templates page-template-twocolleftsidebar page-template-page-templatestwocolleftsidebar-php page page-id-3508 page-child parent-pageid-2308 singular singular-page singular-page-3508 aa-prefix-csved-">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>	<a class="skip-content" href="#main">Skip to content</a>
+		<header class="site-header" id="site-header" role="banner">
+		<div id="title-info" class="title-info">
+			<div class="site-title"><a href='https://csveda.com'><span class='screen-reader-text'>CSVeda</span><img id='logo' class='logo' src='https://csveda.com/wp-content/uploads/2020/02/csvedalogo.png' alt='CSVeda Logo' /></a></div>		</div>
+		<button id="toggle-navigation" class="toggle-navigation"><i class="fas fa-bars"></i></button>
+<div class="menu-container menu-primary" id="menu-primary" role="navigation">
+	<p id="site-description" class="tagline">computer science tutorials</p><ul id="menu-primary-items" class="menu-primary-items"><li id="menu-item-3870" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3870"><a href="https://csveda.com">Home</a></li>
+<li id="menu-item-3661" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3661"><a href="https://csveda.com/core-computer-science/">Computer Science</a>
+<ul class="sub-menu">
+	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-2318"><a href="https://csveda.com/data-structure/">Data Structure</a></li>
+	<li id="menu-item-2612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2612"><a href="https://csveda.com/database-management-system/">DBMS</a></li>
+	<li id="menu-item-5673" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5673"><a href="https://csveda.com/hci/">HCI</a></li>
+	<li id="menu-item-5759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5759"><a href="https://csveda.com/artificial-intelligence/">Artificial Intelligence</a></li>
+	<li id="menu-item-6123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6123"><a href="https://csveda.com/big-data/">Big Data</a></li>
+</ul>
+</li>
+<li id="menu-item-3662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3662"><a href="https://csveda.com/programming/">Programming</a>
+<ul class="sub-menu">
+	<li id="menu-item-3864" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3864"><a href="https://csveda.com/web-application-development-with-asp-net/">Web Application Development with ASP.NET</a></li>
+	<li id="menu-item-2675" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2675"><a href="https://csveda.com/java/">Java</a></li>
+	<li id="menu-item-3797" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3797"><a href="https://csveda.com/structured-query-language/">Structured Query Language</a></li>
+	<li id="menu-item-4177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4177"><a href="https://csveda.com/pl-sql-basics/">PL/SQL</a></li>
+	<li id="menu-item-4487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4487"><a href="https://csveda.com/coding-in-python/">Python</a></li>
+	<li id="menu-item-5308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5308"><a href="https://csveda.com/programming-hub/">Programming Hub</a></li>
+</ul>
+</li>
+<li id="menu-item-3663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3663"><a href="https://csveda.com/web-development/">Web Development</a>
+<ul class="sub-menu">
+	<li id="menu-item-2486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2486"><a href="https://csveda.com/php/">PHP</a></li>
+	<li id="menu-item-3669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3669"><a href="https://csveda.com/html/">HTML</a></li>
+	<li id="menu-item-6068" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6068"><a href="https://csveda.com/css/">CSS</a></li>
+	<li id="menu-item-5979" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5979"><a href="https://csveda.com/javascript-tutorial/">JavaScript</a></li>
+	<li id="menu-item-5059" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5059"><a href="https://csveda.com/flask-web-development-introduction/">Flask</a></li>
+	<li id="menu-item-5094" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5094"><a href="https://csveda.com/node-js/">node.js</a></li>
+	<li id="menu-item-6200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6200"><a href="https://csveda.com/mysql-introduction/">MySQL</a></li>
+</ul>
+</li>
+<li id="menu-item-3916" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3916"><a href="https://csveda.com/mini-projects/">Projects</a></li>
+<li id="menu-item-6092" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6092"><a href="https://csveda.com/interview-questions/">Interview Questions</a></li>
+<li id="menu-item-3853" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3853"><a href="https://csveda.com/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-3858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-3858"><a href="https://csveda.com/privacy-policy-disclaimer/">Privacy Policy &#038; Disclaimer</a></li>
+</ul>
+</li>
+<li id="menu-item-3860" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3860"><a href="https://csveda.com/contact/">Contact Us</a></li>
+</ul><ul class='social-media-icons'>				<li>
+					<a class="twitter" target="_blank"
+					   href="https://twitter.com/csveda1">
+						<i class="fab fa-twitter-square" title="twitter"></i>
+						<span class="screen-reader-text">twitter</span>
+					</a>
+				</li>
+								<li>
+					<a class="facebook" target="_blank"
+					   href="https://www.facebook.com/csveda/">
+						<i class="fab fa-facebook-square" title="facebook"></i>
+						<span class="screen-reader-text">facebook</span>
+					</a>
+				</li>
+								<li>
+					<a class="email" target="_blank"
+					   href="mailto:&#105;n&#102;&#111;&#64;&#99;&#115;ve&#100;&#97;&#46;co&#109;">
+						<i class="fas fa-envelope" title="email"></i>
+						<span class="screen-reader-text">email</span>
+					</a>
+				</li>
+							<li>
+					<a class="email-form" target="_blank"
+					   href="https://csveda.com/contact/">
+						<i class="far fa-envelope" title="email-form"></i>
+						<span class="screen-reader-text">email-form</span>
+					</a>
+				</li>
+								<li>
+					<a class="mixcloud" target="_blank"
+					   href="https://mix.com/csveda">
+						<i class="fab fa-mixcloud" title="mixcloud"></i>
+						<span class="screen-reader-text">mixcloud</span>
+					</a>
+				</li>
+				</ul></div>	</header>
+		<div id="overflow-container" class="overflow-container">
+		<div id="breadcrumbs" class="breadcrumb-trail breadcrumbs"><span class="item-home"><a class="bread-link bread-home" href="https://csveda.com" title="Home">Home</a></span><span class="separator"> &gt; </span><span class="item-parent item-parent-2308"><a class="bread-parent bread-parent-2308" href="https://csveda.com/data-structure/" title="Data Structure">Data Structure</a></span><span class="separator"> &gt; </span><span class="item-current item-3508"><span title="Deletion in Array &#8211; at Beginning, Given Location and End of Linear Array"> Deletion in Array &#8211; at Beginning, Given Location and End of Linear Array</span></span></div>		<div id="main" class="main" role="main">	<div id="loop-container" class="loop-container">
+		<div class="post-3508 page type-page status-publish hentry entry">
+		<div class='entry-header'>
+		<h1 class='entry-title'>Deletion in Array &#8211; at Beginning, Given Location and End of Linear Array</h1>
+	</div>
+	<div class='entry-content'>
+		<article>
+			<div class="csved-before-content" id="csved-1308461356"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9652193096232505" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-9652193096232505" 
+data-ad-slot="5392741455" 
+data-ad-format="link"></ins>
+<script> 
+(adsbygoogle = window.adsbygoogle || []).push({}); 
+</script>
+</div><p>Deletion in array means removing an element and replacing it with the next element or element present at next index. It involves three cases</p><div class="csved-inside-content" style="margin-left: auto; margin-right: auto; text-align: center; " id="csved-1544444352"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9652193096232505" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px;" 
+data-ad-client="ca-pub-9652193096232505" 
+data-ad-slot="4557723850"></ins> 
+<script> 
+(adsbygoogle = window.adsbygoogle || []).push({}); 
+</script>
+</div>
+<h2>Deletion in Array- an element at the beginning of the array</h2>
+<p>In this case we have to move all the elements one position forward to fill the position of the element at the beginningof array. Though the deletion process is not difficult but moving all elements one position forward involve movement of all the existing elements except the one being deleted. This is the worst case scenario in deletion in a linear array.</p>
+<p>In the example array elements from index 1 to index 8 have to moved one position forwards so that the first element is replaced by second, second by third and so on</p><div class="csved-content" style="margin-left: auto; margin-right: auto; text-align: center; " id="csved-1400894640"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9652193096232505" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px;" 
+data-ad-client="ca-pub-9652193096232505" 
+data-ad-slot="4557723850"></ins> 
+<script> 
+(adsbygoogle = window.adsbygoogle || []).push({}); 
+</script>
+</div>
+<h3><img class="alignnone size-full wp-image-3509" src="https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-beginning.png" alt="deletion in array at beginning" width="810" height="310" srcset="https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-beginning.png 810w, https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-beginning-300x115.png 300w, https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-beginning-768x294.png 768w, https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-beginning-3x1.png 3w" sizes="(max-width: 810px) 100vw, 810px" /></h3>
+<h2>Deletion in Array &#8211; an element at the end of the array</h2>
+<p>In this case we don’t have to move any elements since the action here will be just removing the last element. This is done by redefining the index of last element of linear array = N-1.  This is the best case scenario in deletion in a linear array.</p>
+<p>In the example array no elements are moved. The last element is removed by setting the index of last element as 7</p>
+<h3><img class="alignnone size-full wp-image-3511" src="https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-the-end.png" alt="deletion in array- at the end" width="810" height="332" srcset="https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-the-end.png 810w, https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-the-end-300x123.png 300w, https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-the-end-768x315.png 768w, https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-the-end-2x1.png 2w" sizes="(max-width: 810px) 100vw, 810px" /></h3>
+<h2>Deletion in Array &#8211; an element at the give position J</h2>
+<p>Let J be any location in the array for one existing element. We have to delete the element at J position. To do this starting from J every element is moved one place forward so that the element after index J comes to position of J<sup>th </sup>element. This is the average case scenario in deletion in  linear array.</p>
+<p>In the example array ,elements from index J (4) to index 8 have to moved one position forward so that an element at index 4 is replaced by element at index 5. Similarly element at 6<sup>th</sup> postion comes at 5<sup>th</sup> position, element at 7<sup>th</sup> position comes at 6<sup>th</sup> position and element at 8<sup>th</sup> position replaces element at 7<sup>th</sup> position completing the deletion process</p>
+<h3><img class="alignnone size-full wp-image-3510" src="https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-given-position.png" alt="deletion in array- at given position" width="800" height="326" srcset="https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-given-position.png 800w, https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-given-position-300x122.png 300w, https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-given-position-768x313.png 768w, https://csveda.com/wp-content/uploads/2019/05/deletion-in-array-at-given-position-2x1.png 2w" sizes="(max-width: 800px) 100vw, 800px" /></h3>
+<p><strong><em>Note:- for any one of these three cases the count of elements decreases by 1</em></strong></p>
+<h2><strong><em> </em></strong>Algorithm for Element Deletion in Array</h2>
+<pre>Algorithm DeleteLA (DATA, N, ITEM, LOC)
+Desc: This algorithm deletes an element at Jth position in a linear array DATA with N elements
+and stores in ITEM
+If LOC=1 it means the element to be deleted is at the beginning
+If LOC =N it means the element be deleted is at the end
+If LOC = J it means the elements have to be deleted is at at J<sup style="font-family: 'Courier 10 Pitch', Courier, monospace;">th</sup><span style="font-family: 'Courier 10 Pitch', Courier, monospace; font-size: 1.5rem;"> Location
+</span>Begin
+Step 1: [Initialize counter I with index of element to be deleted]
+         I=J
+Step 2: [Store the element to be deleted in ITEM]
+         ITEM=DATA[J]
+Step 3: While I&lt;N repeat steps 4 and 5
+Step 4: [Move the current element one position forward]
+        DATA[I]=DATA[I+1]
+Step 5: [Increment counter I]
+        I=I+1
+Step 6: [Update total under of array elements]
+        N=N-1
+Exit</pre>
+<h2>Complexity of Deletion in Array Algorithm</h2>
+<p>Deletion operation results deleting one element of a linear array . In the algorithm the following is the way the steps are counted.</p>
+<ol>
+<li>Steps 1, 2 and 6 are executed once, so they contributes 3 to complexity function f(n)</li>
+<li>Step 3 is a loop control step that executes step 4 and step 5 N times (once for each element of array DATA after the element to be deleted)</li>
+</ol>
+<p>So the f(n) can be defined as</p>
+<p>f(n)= 2*n+3  or</p>
+<p>f(n)=2n+3</p>
+<p>The highest order term in this function defined in the terms of input size of the algorithm is n, so we can say that the complexity of this algorithm is O(n). It also means that the average time of element deletion in array grows linearly with the size of array DATA.</p>
+<div class="csved-after-content" style="margin-left: auto; margin-right: auto; text-align: center; " id="csved-553018048"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9652193096232505" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-9652193096232505" 
+data-ad-slot="9353636910" 
+data-ad-format="auto"></ins>
+<script> 
+(adsbygoogle = window.adsbygoogle || []).push({}); 
+</script>
+</div>					</article>
+	</div>
+</div>	</div>
+</div><!-- .main -->
+	<aside id="sidebar-primary-container" class="sidebar-primary-container">
+		<h1 class="screen-reader-text">Primary Sidebar</h1>
+		<div class="sidebar sidebar-primary" id="sidebar-primary" role="complementary">
+			<section id="nav_menu-28" class="widget widget_nav_menu"><div class="menu-nav_data_struct-container"><ul id="menu-nav_data_struct" class="menu"><li id="menu-item-2352" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-page-parent menu-item-2352"><a href="https://csveda.com/data-structure/">Data Structure</a></li>
+<li id="menu-item-2354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2354"><a href="https://csveda.com/data-structure/linear-data-structure/">Linear Data Structure- Types</a></li>
+<li id="menu-item-2404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2404"><a href="https://csveda.com/data-structure/non-linear-data-structures/">Non Linear Data Structures</a></li>
+<li id="menu-item-2415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2415"><a href="https://csveda.com/data-structure/fields-records-and-files/">Fields, Records and Files</a></li>
+<li id="menu-item-2420" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2420"><a href="https://csveda.com/data-structure/data-structure-operations/">Data Structure operations</a></li>
+<li id="menu-item-2424" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2424"><a href="https://csveda.com/data-structure/applications-of-data-structures/">Applications of Data Structures in Computer Science</a></li>
+<li id="menu-item-2482" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2482"><a href="https://csveda.com/data-structure/algorithm-complexity/">Algorithm Complexity</a></li>
+<li id="menu-item-2476" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-2476"><a href="https://csveda.com/data-structure/introduction-arrays/">Introduction to Arrays</a>
+<ul class="sub-menu">
+	<li id="menu-item-2499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2499"><a href="https://csveda.com/data-structure/types-of-arrays/">Types of Arrays</a></li>
+	<li id="menu-item-2524" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2524"><a href="https://csveda.com/data-structure/traversal-in-a-linear-array-complexity/">Traversal in a Linear Array</a></li>
+	<li id="menu-item-2663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2663"><a href="https://csveda.com/data-structure/insertion-in-linear-array/">Insertion in Linear Array</a></li>
+	<li id="menu-item-3513" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3508 current_page_item menu-item-3513"><a href="https://csveda.com/data-structure/deletion-in-array-at-beginning-given-location-and-end-of-linear-array/" aria-current="page">Deletion in Linear Array</a></li>
+</ul>
+</li>
+<li id="menu-item-4910" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-4910"><a href="https://csveda.com/stack-introduction-and-memory-representation/">Stack- Introduction and Memory Representation</a>
+<ul class="sub-menu">
+	<li id="menu-item-4915" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4915"><a href="https://csveda.com/stack-data-structure-push-operation/">Stack Data Structure-Push Operation</a></li>
+	<li id="menu-item-4923" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4923"><a href="https://csveda.com/stack-pop-operation-using-array-and-linked-list/">Stack Pop Operation- using Array and Linked List</a></li>
+</ul>
+</li>
+<li id="menu-item-3548" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3548"><a href="https://csveda.com/data-structure/linear-linked-list/">Linear Linked List</a>
+<ul class="sub-menu">
+	<li id="menu-item-4787" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4787"><a href="https://csveda.com/data-structure-linked-list-traversal/">Data Structure Linked List-Traversal</a></li>
+	<li id="menu-item-4795" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4795"><a href="https://csveda.com/search-algorithm-linked-list/">Search Algorithm- Linked List</a></li>
+	<li id="menu-item-4800" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4800"><a href="https://csveda.com/searching-in-a-sorted-linked-list/">Searching in a Sorted Linked List</a></li>
+	<li id="menu-item-4855" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4855"><a href="https://csveda.com/insertion-in-a-linked-list/">Insertion in a Linked List</a></li>
+	<li id="menu-item-4880" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4880"><a href="https://csveda.com/deletion-in-a-linked-list/">Deletion in a Linked List</a></li>
+	<li id="menu-item-4904" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4904"><a href="https://csveda.com/reverse-a-linked-list/">Reverse a linked list</a></li>
+	<li id="menu-item-5020" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5020"><a href="https://csveda.com/adding-of-polynomials-of-using-linear-linked-list/">Adding of Polynomials -using Linear Linked List</a></li>
+</ul>
+</li>
+<li id="menu-item-4929" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-4929"><a href="https://csveda.com/queue-applications-introduction-and-memory-representation/">Queues- Introduction and Memory Representation</a>
+<ul class="sub-menu">
+	<li id="menu-item-4938" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4938"><a href="https://csveda.com/circular-queue-memory-representation-and-applications/">Circular Queue- Memory Representation and Applications</a></li>
+	<li id="menu-item-4949" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4949"><a href="https://csveda.com/queue-insertion-using-array-and-linked-list/">Queue Insertion – using Array and Linked List</a></li>
+	<li id="menu-item-4956" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4956"><a href="https://csveda.com/queue-deletion-using-array-and-linked-list/">Queue Deletion – using Array and Linked List</a></li>
+	<li id="menu-item-4963" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4963"><a href="https://csveda.com/insertion-in-circular-queue/">Insertion in Circular Queue</a></li>
+	<li id="menu-item-4970" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4970"><a href="https://csveda.com/deletion-in-a-circular-queue/">Deletion in a Circular Queue</a></li>
+</ul>
+</li>
+<li id="menu-item-5038" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-5038"><a href="https://csveda.com/doubly-linked-list/">Doubly Linked List</a>
+<ul class="sub-menu">
+	<li id="menu-item-5045" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5045"><a href="https://csveda.com/insertion-in-doubly-linked-list/">Insertion in doubly linked list</a></li>
+	<li id="menu-item-5054" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5054"><a href="https://csveda.com/deletion-in-doubly-linked-list/">Deletion in doubly linked list</a></li>
+</ul>
+</li>
+<li id="menu-item-5161" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-5161"><a href="https://csveda.com/binary-tree-representation-in-memory/">Binary Tree</a>
+<ul class="sub-menu">
+	<li id="menu-item-5185" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-5185"><a href="https://csveda.com/binary-tree-traversal/">Binary Tree Traversal</a>
+	<ul class="sub-menu">
+		<li id="menu-item-5207" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5207"><a href="https://csveda.com/preorder-traversal-in-a-binary-tree/">Preorder Traversal in a Binary Tree</a></li>
+		<li id="menu-item-5211" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5211"><a href="https://csveda.com/inorder-traversal-in-a-binary-tree/">Inorder Traversal in a Binary Tree</a></li>
+		<li id="menu-item-5216" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5216"><a href="https://csveda.com/postorder-traversal-in-a-binary-tree/">Postorder Traversal in a Binary Tree</a></li>
+	</ul>
+</li>
+	<li id="menu-item-5198" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5198"><a href="https://csveda.com/expression-tree/">Expression Tree</a></li>
+	<li id="menu-item-6654" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6654"><a href="https://csveda.com/data-structure/min-heap-max-heap/">Min Heap &#038; Max Heap</a></li>
+</ul>
+</li>
+<li id="menu-item-5221" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-5221"><a href="https://csveda.com/binary-search-tree/">Binary Search Tree</a>
+<ul class="sub-menu">
+	<li id="menu-item-5238" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5238"><a href="https://csveda.com/binary-search-tree-insertion/">Binary Search Tree Insertion</a></li>
+</ul>
+</li>
+</ul></div></section>		</div>
+	</aside>
+</div><!-- .overflow-container -->
+<footer id="site-footer" class="site-footer" role="contentinfo">
+	<h1>
+		<a href="https://csveda.com">
+			CSVeda		</a>
+	</h1>
+	<span class="tagline">computer science tutorials</span>	<div class="design-credit">
+        <span>
+            Copyright © 2021 CSVeda.com        </span>
+	</div>
+</footer>
+<script type='text/javascript' src='https://csveda.com/wp-content/themes/ignite/js/build/production.min.js?ver=5.9.3' async='async' id='ct-ignite-production-js'></script>
+<script>!function(){window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[],advanced_ads_ready_queue.push=window.advanced_ads_ready;for(var d=0,a=advanced_ads_ready_queue.length;d<a;d++)advanced_ads_ready(advanced_ads_ready_queue[d])}();</script></body>
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using Disk: Enhanced{w3tc_pagecache_reject_reason}
+
+Served from: csveda.com @ 2026-02-23 06:18:00 by W3 Total Cache
+-->
